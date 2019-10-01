@@ -26,6 +26,7 @@ function imageHover () {
     })
 }
 function scrollTop () {
+    $(this).scrollTop(0);
     var button = $('#scroll-up');
     var timeoutKey = -1;
     $(button).css('display','none')
