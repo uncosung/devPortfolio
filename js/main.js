@@ -28,6 +28,7 @@ function imageHover () {
 function scrollTop () {
     var button = $('#scroll-up');
     var timeoutKey = -1;
+    $(button).css('display','none')
     $(document).on('scroll', () => {
         if(timeoutKey) {
             window.clearTimeout(timeoutKey);
