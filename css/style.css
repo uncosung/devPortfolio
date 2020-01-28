@@ -357,6 +357,9 @@ body {
 .contact-info div {
 	margin-bottom: 20px;
 }
+.area-title {
+  margin-top: 30px;
+}
 .contact-icon i {
 	border: 1px solid #42DCA3;
 	color: #42DCA3;
@@ -430,7 +433,6 @@ body {
 }
 .profile {
   width: 100%;
-  margin-top: 25%;
   border-radius: 50%;
 }
 .profile-container {
