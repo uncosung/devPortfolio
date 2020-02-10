@@ -438,3 +438,22 @@ body {
 .profile-container {
   height: 100%;
 }
+@media only screen and (orientation:portrait) {
+  .profile {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 1000px) and (orientation:landscape) {
+  .projects {
+    margin-top: 15px;
+    height: 80vh;
+  }
+  .projects img {
+    width: auto
+  }
+  .profile {
+    height: 60vh;
+    width: auto;
+    margin-bottom: 15px;
+  }
+}
