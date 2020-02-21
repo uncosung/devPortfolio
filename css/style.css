@@ -438,11 +438,22 @@ body {
 .profile-container {
   height: 100%;
 }
+.contact-small {
+  margin-top: 10vh;
+}
+.contact-large {
+  display: none;
+}
 @media only screen and (orientation:portrait) {
   .profile {
     margin-bottom: 15px;
   }
-
+  .contact-small {
+    display: none;
+  }
+  .contact-large {
+    display: block;
+  }
 }
 @media only screen and (max-width: 1000px) and (orientation:landscape) {
   .projects {
@@ -456,5 +467,19 @@ body {
     height: 60vh;
     width: auto;
     margin-bottom: 15px;
+  }
+  .contact-small {
+    display: none;
+  }
+  .contact-large {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+  .contact-small {
+    display: none;
+  }
+  .contact-large {
+    display: block;
   }
 }
