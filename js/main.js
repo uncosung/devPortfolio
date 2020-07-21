@@ -9,6 +9,7 @@ function startApp () {
         }, 500, 'linear');
         return false
     });
+    
 }
 
 function imageHover () {

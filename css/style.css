@@ -4,14 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   font-family: "Montserrat", "Work Sans", sans-serif;
   color: black;
   background-color: white;
 }
 html {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 h1,
@@ -53,11 +53,12 @@ a:focus {
   font-weight: 400;
 }
 .navbar-custom {
+  width: 100vw;
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: grey;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -75,7 +76,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: white;
+  color: black;
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -99,21 +100,22 @@ a:focus {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .navbar-custom .nav li.active a:hover {
-  color: white;
+  color: black;
 }
 @media (min-width: 768px) {
   .navbar-custom {
+    width: 100%;
     padding: 20px 0;
     border-bottom: none;
     letter-spacing: 1px;
-    background: transparent;
+    /* background: transparent; */
     -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: black;
+    background: grey;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
@@ -123,9 +125,9 @@ a:focus {
   height: 100vh;
   padding: 100px 0;
   text-align: center;
-  color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: black;
+  color: darkblue;
+  /* background: url(../img/intro-bg.jpg) no-repeat bottom center scroll; */
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -134,6 +136,7 @@ a:focus {
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
+  padding: 10vw;
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
@@ -284,12 +287,19 @@ ul.banner-social-buttons {
   }
 }
 footer {
-  background-color: black;
-  color: white;
+  background-color: grey;
+  color: black;
   padding: 50px 0;
+  font-size: 14px;
 }
 footer p {
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  footer {
+    font-size: 12px;
+  }
 }
 
 ::-moz-selection {
@@ -482,4 +492,74 @@ body {
   .contact-large {
     display: block;
   }
+}
+.about-us, .drsung, .staff {
+  margin-top: 5vh;
+  color: black;
+  text-align: left;
+}
+.jaysung, .services-info {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .dr-img, #staff-picture {
+    margin-bottom: 5vh;
+  }
+}
+.staff-info {
+  font-size: 20px;
+  text-align: left;
+  vertical-align: center;
+}
+#staff-picture {
+  max-width: 100%;
+}
+.services {
+  text-align: left;
+}
+.contact-header .contact-body {
+  margin-top: 15vh;
+  vertical-align: middle;
+  padding: 20px;
+}
+.contact-office-hours>div, .contact-address>div {
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2;
+  display: inline-block;
+
+}
+.contact-office-hours th, .contact-office-hours tr, .contact-address th, .contact-address tr {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+#map {
+  margin-top: 10px;
+  height: 40vh;
+}
+@media (max-width: 767px) {
+  .contact-body {
+    margin-top: 1vh !important;
+  }
+  .contact-info, .contact-info div {
+    padding: 0;
+  }
+  .contact-office-hours, .contact-address {
+    font-size: 11px;
+  }
+  .office-body, .office {
+    padding: 0 !important;
+    height: 80vh;
+  }
+}
+.dr-img img{
+  width: 100%;
+}
+.services img {
+  width: 100%;
+}
+.services-row {
+  margin-top: 2vh;
+  margin-bottom: 4vh;
 }
